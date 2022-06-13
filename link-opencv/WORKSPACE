@@ -1,0 +1,8 @@
+load("@bazel_tools//tools/build_defs/repo:http.bzl", "http_archive")
+
+http_archive(
+    name = "opencv",
+    url = "http://artifactory.sm/artifactory/opencv/opencv-4.2.0-windows.zip",
+    sha256 = "11d25a85b53ebdd0f14f83e341f1876dcf1b9dde250db1435cc86e3dd9538fdb",
+    build_file = "@//:opencv.BUILD",
+)
